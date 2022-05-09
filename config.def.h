@@ -106,8 +106,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Print,  spawn,          SHCMD("flameshot gui -c -p ~/Pictures") },
 	{ 0,                            XK_Print,  spawn,          SHCMD("flameshot full -c -p ~/Pictures") },
 	{ 0,              XF86XK_AudioMute,        spawn,          SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
-	{ 0,              XF86XK_AudioRaiseVolume, spawn,          SHCMD("pamixer --allow-boost -i 3; kill -44 $(pidof dwmblocks)") },
-	{ 0,              XF86XK_AudioLowerVolume, spawn,          SHCMD("pamixer --allow-boost -d 3; kill -44 $(pidof dwmblocks)") },
+	{ 0,              XF86XK_AudioRaiseVolume, spawn,          SHCMD("pamixer --allow-boost -i 1; kill -44 $(pidof dwmblocks)") },
+	{ 0,              XF86XK_AudioLowerVolume, spawn,          SHCMD("pamixer --allow-boost -d 1; kill -44 $(pidof dwmblocks)") },
 };
 
 /* button definitions */
