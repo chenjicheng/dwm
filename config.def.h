@@ -103,8 +103,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_r,      spawn,          {.v = roficmd} },
-	{ MODKEY,                       XK_Print,  spawn,          SHCMD("flameshot gui -c -p ~/Pictures") },
-	{ 0,                            XK_Print,  spawn,          SHCMD("flameshot full -c -p ~/Pictures") },
+	{ 0,                            XK_Print,  spawn,          SHCMD("maim pic-full-$(date '+%y%m%d-%H%M-%S').png") },
+	{ ShiftMask,                    XK_Print,  spawn,          SHCMD("maimpick") },
 	{ 0,              XF86XK_AudioMute,        spawn,          SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
 	{ 0,              XF86XK_AudioRaiseVolume, spawn,          SHCMD("pamixer --allow-boost -i 1; kill -44 $(pidof dwmblocks)") },
 	{ 0,              XF86XK_AudioLowerVolume, spawn,          SHCMD("pamixer --allow-boost -d 1; kill -44 $(pidof dwmblocks)") },
